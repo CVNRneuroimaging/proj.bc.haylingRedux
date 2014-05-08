@@ -1,4 +1,5 @@
 helloFMRI
 =========
 
-sources for my iTunes U course called helloFMRI
+Downloadable resources from helloFMRI.com
+
