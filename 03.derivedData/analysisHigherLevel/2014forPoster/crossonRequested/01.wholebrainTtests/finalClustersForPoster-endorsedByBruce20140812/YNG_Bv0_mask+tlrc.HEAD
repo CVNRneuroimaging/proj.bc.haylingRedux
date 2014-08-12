@@ -1,0 +1,111 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 2002
+'[stowler@stowler-rmbp: Wed Aug  6 09:13:18 2014] 3dttest -prefix group/ttest.oldvsyoung.taskB-A.nii.gz -set1 individual/aucTaskB-A.002.denoisedAndWarped.nii.gz individual/aucTaskB-A.003.denoisedAndWarped.nii.gz individual/aucTaskB-A.004.denoisedAndWarped.nii.gz individual/aucTaskB-A.005.denoisedAndWarped.nii.gz individual/aucTaskB-A.006.denoisedAndWarped.nii.gz individual/aucTaskB-A.007.denoisedAndWarped.nii.gz individual/aucTaskB-A.008.denoisedAndWarped.nii.gz individual/aucTaskB-A.009.denoisedAndWarped.nii.gz individual/aucTaskB-A.011.denoisedAndWarped.nii.gz individual/aucTaskB-A.012.denoisedAndWarped.nii.gz individual/aucTaskB-A.013.denoisedAndWarped.nii.gz individual/aucTaskB-A.014.denoisedAndWarped.nii.gz individual/aucTaskB-A.015.denoisedAndWarped.nii.gz individual/aucTaskB-A.016.denoisedAndWarped.nii.gz individual/aucTaskB-A.017.denoisedAndWarped.nii.gz -set2 individual/aucTaskB-A.101.denoisedAndWarped.nii.gz individual/aucTaskB-A.102.denoisedAndWarped.nii.gz individual/aucTaskB-A.103.denoisedAndWarped.nii.gz individual/aucTaskB-A.104.denoisedAndWarped.nii.gz individual/aucTaskB-A.107.denoisedAndWarped.nii.gz individual/aucTaskB-A.108.denoisedAndWarped.nii.gz individual/aucTaskB-A.109.denoisedAndWarped.nii.gz individual/aucTaskB-A.110.denoisedAndWarped.nii.gz individual/aucTaskB-A.112.denoisedAndWarped.nii.gz individual/aucTaskB-A.113.denoisedAndWarped.nii.gz individual/aucTaskB-A.114.denoisedAndWarped.nii.gz individual/aucTaskB-A.116.denoisedAndWarped.nii.gz individual/aucTaskB-A.117.denoisedAndWarped.nii.gz individual/aucTaskB-A.118.denoisedAndWarped.nii.gz individual/aucTaskB-A.119.denoisedAndWarped.nii.gz\n[stowler@pano.birc.emory.edu: Tue Aug 12 10:33:13 2014] == Interactive clusterize mask:\n[stowler@pano.birc.emory.edu: Tue Aug 12 10:33:13 2014] 3dclust -1Dformat -nosum -1dindex 1 -1tindex 1 -2thresh -3.67 3.67 -dxyz=1 -savemask YNG_Bv0_mask 1.75 215 /data/birc/Florida/STN/SUBCORT_DISS_2009/SC/stowler-temp-201407XX/group/ttest.oldvsyoung.taskB-A.nii.gz~
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_FUNC~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'XYZ_Hym5U6IT9G7xval9IuNtvA~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Tue Aug 12 10:33:13 2014~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 2 11 1 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 5
+'zyxt~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 0 2 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+            -90            126            -72
+
+type  = float-attribute
+name  = DELTA
+count = 3
+              1             -1              1
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+              1              0              0            -90              0
+             -1              0            126              0              0
+              1            -72
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+              1              0              0            -90              0
+             -1              0            126              0              0
+              1            -72
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 2
+              0              9
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 1 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 182 218 182 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 1
+ 1
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 1
+              0
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 4
+'MNI~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~

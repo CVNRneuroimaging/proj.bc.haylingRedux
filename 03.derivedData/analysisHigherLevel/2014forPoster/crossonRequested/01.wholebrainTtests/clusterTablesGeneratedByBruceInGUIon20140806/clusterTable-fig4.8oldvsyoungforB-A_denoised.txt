@@ -1,0 +1,14 @@
+# AFNI interactive cluster table
+# 3dclust -1Dformat -nosum -1dindex 1 -1tindex 1 -2thresh -3.67 3.67 -dxyz=1 1.75 215 /data/birc/Florida/STN/SUBCORT_DISS_2009/SC/stowler-temp-201407XX/group/ttest.oldvsyoung.taskB-A.nii.gz
+#Coordinate order = RAI
+#Voxels  CM x   CM y   CM z  Peak x Peak y Peak z
+#------ ------ ------ ------ ------ ------ ------
+   1118   -1.9  -41.2  +22.6   +0.0  -43.0  +22.0
+    672   +8.3  +73.5  +34.8   +7.0  +72.0  +33.0
+    508  -17.9  -20.8  -12.7  -18.0  -23.0  -12.0
+    363   -0.1  +41.9  +19.8   +0.0  +42.0  +20.0
+    343  -41.3  -16.7  -47.9  -43.0  -15.0  -47.0
+    265  -64.7  +17.3  +82.7  -65.0  +17.0  +84.0
+    242  -43.1  -47.8  +26.4  -44.0  -48.0  +28.0
+    241  -19.7 +102.0  -37.5  -18.0  +99.0  -37.0
+    223  +29.6 +116.9  -32.6  +32.0 +116.0  -32.0
