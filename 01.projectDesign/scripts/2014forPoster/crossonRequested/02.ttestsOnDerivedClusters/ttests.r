@@ -1,0 +1,17 @@
+t.test(individualAUC~GROUP, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust1.BminusA)
+t.test(individualAUC~GROUP, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust2.BminusA)
+t.test(individualAUC~GROUP, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust3.BminusA)
+t.test(individualAUC~GROUP, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust4.BminusA)
+t.test(individualAUC~GROUP, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust7.BminusA)
+
+t.test(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust1.young.A.and.B)
+t.test(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust2.young.A.and.B)
+t.test(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust3.young.A.and.B)
+t.test(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust4.young.A.and.B)
+t.test(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust7.young.A.and.B)
+
+t.test(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust1.old.A.and.B)
+t.test(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust2.old.A.and.B)
+t.test(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust3.old.A.and.B)
+t.test(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust4.old.A.and.B)
+t.test(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust7.old.A.and.B)

@@ -1,0 +1,17 @@
+Boxplot(individualAUC~GROUP, data=clust1.BminusA, id.method="none")
+Boxplot(individualAUC~GROUP, data=clust2.BminusA, id.method="none")
+Boxplot(individualAUC~GROUP, data=clust3.BminusA, id.method="none")
+Boxplot(individualAUC~GROUP, data=clust4.BminusA, id.method="none")
+Boxplot(individualAUC~GROUP, data=clust7.BminusA, id.method="none")
+
+Boxplot(individualAUC~CONDITION, data=clust1.old.A.and.B, id.method="none")
+Boxplot(individualAUC~CONDITION, data=clust2.old.A.and.B, id.method="none")
+Boxplot(individualAUC~CONDITION, data=clust3.old.A.and.B, id.method="none")
+Boxplot(individualAUC~CONDITION, data=clust4.old.A.and.B, id.method="none")
+Boxplot(individualAUC~CONDITION, data=clust7.old.A.and.B, id.method="none")
+
+Boxplot(individualAUC~CONDITION, data=clust1.young.A.and.B, id.method="none")
+Boxplot(individualAUC~CONDITION, data=clust2.young.A.and.B, id.method="none")
+Boxplot(individualAUC~CONDITION, data=clust3.young.A.and.B, id.method="none")
+Boxplot(individualAUC~CONDITION, data=clust4.young.A.and.B, id.method="none")
+Boxplot(individualAUC~CONDITION, data=clust7.young.A.and.B, id.method="none")
