@@ -1,9 +1,11 @@
 Bruce's t-tests matching his requested plots
 ==============================================
+Bruce requested these t-tests as quantative measures that help describe the relationships pictured in the poster's boxplots.
 
 
 1. Five t-tests comparing B-A within cluster
 -----------------------------------------------
+Sign of t-statistics reflects old minus young.
 ```
 t.test(individualAUC~GROUP, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust1.BminuA)
 
@@ -83,167 +85,161 @@ t.test(individualAUC~GROUP, alternative='two.sided', conf.level=.95, var.equal=F
 
 
 
-2. Five t-tests comparing within-cluster young: TaskA vs TaskB
------------------------------------------------
+2. Five t-tests comparing within-cluster young: TaskB vs TaskA paired within participant
+-----------------------------------------------------------------------------------------
+Signs of t-statistic and mean difference reflect TaskB minus TaskA.
 
 ```
-t.testt(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust1.young.A.and.B)
+> t.test(clust1.young.A.And.B.wide$TaskB, clust1.young.A.And.B.wide$TaskA, alternative='two.sided', conf.level=.95, paired=TRUE)
 
-   Welch Two Sample t-test
+   Paired t-test
 
-   data:  individualAUC by CONDITION
-   t = -3.0615, df = 25.899, p-value = 0.00508
+   data:  clust1.young.A.And.B.wide$TaskB and clust1.young.A.And.B.wide$TaskA
+   t = 3.6912, df = 14, p-value = 0.002419
    alternative hypothesis: true difference in means is not equal to 0
    95 percent confidence interval:
-    -2.5817695 -0.5073142
+    0.6470898 2.4419939
     sample estimates:
-    mean in group TaskA mean in group TaskB 
-            -0.08546793          1.45907393 
-
+    mean of the differences 
+                   1.544542 
 
 ```
 ```
-t.test(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust2.young.A.and.B)
+> t.test(clust2.young.A.And.B.wide$TaskB, clust2.young.A.And.B.wide$TaskA, alternative='two.sided', conf.level=.95, paired=TRUE)
 
-   Welch Two Sample t-test
+   Paired t-test
 
-   data:  individualAUC by CONDITION
-   t = -4.0683, df = 25.107, p-value = 0.0004128
+   data:  clust2.young.A.And.B.wide$TaskB and clust2.young.A.And.B.wide$TaskA
+   t = 7.4798, df = 14, p-value = 2.968e-06
    alternative hypothesis: true difference in means is not equal to 0
    95 percent confidence interval:
-    -3.972566 -1.302644
+    1.881293 3.393917
     sample estimates:
-    mean in group TaskA mean in group TaskB 
-              -1.312639            1.324965 
+    mean of the differences 
+                   2.637605 
 
 
 ```
 ```
-t.test(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust3.young.A.and.B)
+> t.test(clust3.young.A.And.B.wide$TaskB, clust3.young.A.And.B.wide$TaskA, alternative='two.sided', conf.level=.95, paired=TRUE)
 
-   Welch Two Sample t-test
+   Paired t-test
 
-   data:  individualAUC by CONDITION
-   t = -2.4356, df = 27.977, p-value = 0.02149
+   data:  clust3.young.A.And.B.wide$TaskB and clust3.young.A.And.B.wide$TaskA
+   t = 4.1066, df = 14, p-value = 0.001068
    alternative hypothesis: true difference in means is not equal to 0
    95 percent confidence interval:
-    -1.5174856 -0.1310003
+    0.3937616 1.2547243
     sample estimates:
-    mean in group TaskA mean in group TaskB 
-             -0.2996914           0.5245516 
-
-
+    mean of the differences 
+                   0.824243 
 ```
 ```
-t.test(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust4.young.A.and.B)
+> t.test(clust4.young.A.And.B.wide$TaskB, clust4.young.A.And.B.wide$TaskA, alternative='two.sided', conf.level=.95, paired=TRUE)
 
-   Welch Two Sample t-test
+   Paired t-test
 
-   data:  individualAUC by CONDITION
-   t = -2.8906, df = 27.892, p-value = 0.007366
+   data:  clust4.young.A.And.B.wide$TaskB and clust4.young.A.And.B.wide$TaskA
+   t = 5.8453, df = 14, p-value = 4.253e-05
    alternative hypothesis: true difference in means is not equal to 0
    95 percent confidence interval:
-    -3.4647783 -0.5905039
+    1.283655 2.771628
     sample estimates:
-    mean in group TaskA mean in group TaskB 
-              0.3547997           2.3824409 
-
+    mean of the differences 
+                   2.027641 
 
 ```
 ```
-t.test(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust7.young.A.and.B)
+> t.test(clust7.young.A.And.B.wide$TaskB, clust7.young.A.And.B.wide$TaskA, alternative='two.sided', conf.level=.95, paired=TRUE)
 
-   Welch Two Sample t-test
+   Paired t-test
 
-   data:  individualAUC by CONDITION
-   t = -2.6781, df = 27.999, p-value = 0.01225
+   data:  clust7.young.A.And.B.wide$TaskB and clust7.young.A.And.B.wide$TaskA
+   t = 6.6639, df = 14, p-value = 1.072e-05
    alternative hypothesis: true difference in means is not equal to 0
    95 percent confidence interval:
-    -5.4857068 -0.7308329
+    2.107867 4.108673
     sample estimates:
-    mean in group TaskA mean in group TaskB 
-               3.070309            6.178579 
+    mean of the differences 
+                    3.10827 
 ```
 
 
-3. Five t-tests comparing within-cluster old: TaskA vs TaskB
------------------------------------------------
+3. Five t-tests comparing within-cluster old: TaskB vs TaskA paired within participant
+---------------------------------------------------------------------------------------
+Signs of t-statistic and mean difference reflect TaskB minus TaskA.
 
 ```
-t.test(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust1.old.A.and.B)
+> t.test(clust1.old.A.And.B.wide$TaskB, clust1.old.A.And.B.wide$TaskA, alternative='two.sided', conf.level=.95, paired=TRUE)
 
-   Welch Two Sample t-test
+   Paired t-test
 
-   data:  individualAUC by CONDITION
-   t = 2.5908, df = 27.314, p-value = 0.01519
+   data:  clust1.old.A.And.B.wide$TaskB and clust1.old.A.And.B.wide$TaskA
+   t = -3.9149, df = 14, p-value = 0.001556
    alternative hypothesis: true difference in means is not equal to 0
    95 percent confidence interval:
-    0.1497293 1.2868719
+    -1.1118256 -0.3247756
     sample estimates:
-    mean in group TaskA mean in group TaskB 
-              0.2185007          -0.4997999 
-
+    mean of the differences 
+                 -0.7183006 
 
 ```
 ```
-t.test(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust2.old.A.and.B)
+> t.test(clust2.old.A.And.B.wide$TaskB, clust2.old.A.And.B.wide$TaskA, alternative='two.sided', conf.level=.95, paired=TRUE)
 
-   Welch Two Sample t-test
+   Paired t-test
 
-   data:  individualAUC by CONDITION
-   t = -0.9944, df = 28, p-value = 0.3286
+   data:  clust2.old.A.And.B.wide$TaskB and clust2.old.A.And.B.wide$TaskA
+   t = 2.7033, df = 14, p-value = 0.01715
    alternative hypothesis: true difference in means is not equal to 0
    95 percent confidence interval:
-    -1.7414916  0.6032721
+    0.1175764 1.0206431
     sample estimates:
-    mean in group TaskA mean in group TaskB 
-               1.606542            2.175652 
-
+    mean of the differences 
+                  0.5691097 
 
 ```
 ```
-t.test(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust3.old.A.and.B)
+> t.test(clust3.old.A.And.B.wide$TaskB, clust3.old.A.And.B.wide$TaskA, alternative='two.sided', conf.level=.95, paired=TRUE)
 
-   Welch Two Sample t-test
+   Paired t-test
 
-   data:  individualAUC by CONDITION
-   t = 1.0369, df = 26.569, p-value = 0.3091
+   data:  clust3.old.A.And.B.wide$TaskB and clust3.old.A.And.B.wide$TaskA
+   t = -4.0111, df = 14, p-value = 0.001288
    alternative hypothesis: true difference in means is not equal to 0
    95 percent confidence interval:
-    -0.9462701  2.8766879
+    -1.4813231 -0.4490948
     sample estimates:
-    mean in group TaskA mean in group TaskB 
-             -0.9203529          -1.8855618 
-
-
+    mean of the differences 
+                 -0.9652089 
 ```
 ```
-t(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust4.old.A.and.B)
+> t.test(clust4.old.A.And.B.wide$TaskB, clust4.old.A.And.B.wide$TaskA, alternative='two.sided', conf.level=.95, paired=TRUE)
 
-   Welch Two Sample t-test
+   Paired t-test
 
-   data:  individualAUC by CONDITION
-   t = -0.1481, df = 26.959, p-value = 0.8833
+   data:  clust4.old.A.And.B.wide$TaskB and clust4.old.A.And.B.wide$TaskA
+   t = 0.3186, df = 14, p-value = 0.7547
    alternative hypothesis: true difference in means is not equal to 0
    95 percent confidence interval:
-    -1.217291  1.053376
+    -0.4697622  0.6336768
     sample estimates:
-    mean in group TaskA mean in group TaskB 
-               1.191410            1.273367 
-
+    mean of the differences 
+                 0.08195731 
 
 ```
 ```
-t.test(individualAUC~CONDITION, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=clust7.old.A.and.B)
+> t.test(clust7.old.A.And.B.wide$TaskB, clust7.old.A.And.B.wide$TaskA, alternative='two.sided', conf.level=.95, paired=TRUE)
 
-   Welch Two Sample t-test
+   Paired t-test
 
-   data:  individualAUC by CONDITION
-   t = 0.7104, df = 27.443, p-value = 0.4835
+   data:  clust7.old.A.And.B.wide$TaskB and clust7.old.A.And.B.wide$TaskA
+   t = -2.9445, df = 14, p-value = 0.01066
    alternative hypothesis: true difference in means is not equal to 0
    95 percent confidence interval:
-    -3.566099  7.347353
+    -3.2677634 -0.5134903
     sample estimates:
-    mean in group TaskA mean in group TaskB 
-               3.379796            1.489169 
+    mean of the differences 
+                  -1.890627 
+
 ```
